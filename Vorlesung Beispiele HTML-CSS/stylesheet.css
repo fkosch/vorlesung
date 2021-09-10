@@ -1,0 +1,28 @@
+h1 {color: blue;}
+
+input[type="text"],input[type="password"],input[type="tel"]{
+    position: absolute;
+    left: 150px;
+    //border: 3px solid #73AD21;
+}
+
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}

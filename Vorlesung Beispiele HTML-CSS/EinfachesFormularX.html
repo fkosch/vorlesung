@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="stylesheet.css">
+		<title>Einfaches Formular</title>
+	</head>
+	<body>
+		<h1>Große Überschrift</h1>
+		<form  action="http://www.xyz.de" method="POST">
+			<label for="an">Anmeldename:
+				<input type="text" name="anmeldename" id="an" placeholder="Name"/>
+			</label>
+			<br/>
+			<label for="pwd">Passwort:
+				<input type="password" name="passwort" id="pwd" pattern="[A-Za-z0-9]{10,20}" title="10-20 Zeichen, nur Buchstaben oder Zahlen"/>
+			</label>
+			<br/>
+			Tel.: <input type="tel" id="phone" pattern="[-0-9]+"/>
+			<p>
+				<label><input type="checkbox" name="blume" value="Rose"/>Rose</label>
+				<label><input type="checkbox" name="blume" value="Tulpe" checked/>Tulpe</label>
+				<label><input type="checkbox" name="blume" value="Gerbera"/>Gerbera</label>
+				<label><input type="checkbox" name="blume" value="Lilie"/> Lilie</label>
+			</p>
+			<p>
+				Farbe:
+				<select name="farbe" size="1">
+					<option value="rot"> rot </option>
+					<option value="gelb" selected> gelb </option>
+					<option value="blau"> blau </option>
+				</select>
+			</p>
+			<fieldset>
+				<legend> Größe </legend>
+				<label><input type="radio" name="groesse" value="k"/>klein</label>
+				<label><input type="radio" name="groesse" value="m"/>mittel</label>
+				<label><input type="radio" name="groesse" value="g" checked/>groß</label>
+			</fieldset>
+			<p>
+				Frist: <input type="date" name="datum"/>
+				Uhrzeit: <input type="time" name="zeit" step="900" value="12:00"/>
+			</p>
+			Beitrag: <br/>
+			<textarea name="beitrag" rows="9" cols="45">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</textarea>
+			<hr/>
+			<input type="submit" value="Abschicken"/>
+			<input type="reset" value="zurücksetzen"/>
+		</form>
+	</body>
+</html>

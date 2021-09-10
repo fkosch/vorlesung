@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Einfaches Formular</title>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<h1>Login</h1>
+		<form  method="GET">
+			<label for="an">Anmeldename:
+				<input type="text" name="anmeldename" id="an" placeholder="Name"/>
+			</label>
+			<br/>
+			<label for="pwd">Passwort:
+				<input type="password" name="passwort" id="pwd" pattern="[A-Za-z0-9]{10,20}" title="10-20 Zeichen, nur Buchstaben oder Zahlen" placeholder="Passwort"/>
+			</label>
+			<br/><br/>
+			<input type="submit" value="Abschicken"/>
+			<input type="reset" value="zurücksetzen"/>
+		</form>
+	</body>
+</html>
